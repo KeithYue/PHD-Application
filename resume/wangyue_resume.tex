@@ -1,0 +1,143 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%% Copyright 2010-2011 Mark Liu (markwayneliu@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper]{moderncv}
+
+\usepackage{verbatim}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+
+% personal data
+\firstname{Yue}
+\familyname{Wang}
+\address{\#37, Xueyuan Road}{Haidian District, Beijing}    % optional, remove the line if not wanted
+\mobile{+8615210832603}                    % optional, remove the line if not wanted
+\photo[64pt]{wangyue}
+\email{buaawangyue@gmail.com}                      % optional, remove the line if not wanted
+\homepage{keithyue.github.io}                % optional, remove the line if not wanted
+% \homepageurl{markliu.me}
+% \extrainfo{\url{http://keithyue.github.io}} % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+% \cventry{2009--2011}{MS, Environmental Studies}{University of Wisconsin - Madison}{Madison, WI}{}{}
+% \cvline{advisor:}{\small Professor Mutlu Ozdogan}
+% \cventry{2007--2009}{MS, Computer Science}{University of Wisconsin - Madison}{Madison, WI}{}{}
+% \cvline{advisor:}{\small Professor Eric Bach}
+% \cventry{2003--2007}{BS, Computer Science and Engineering}{UCLA}{Los Angeles, CA}{}{}  % arguments 3 to 6 can be left empty
+% \cvline{gpa:}{\small 3.76/4.0}
+% \cvline{honors:}{\small Cum Laude}
+\cventry{2013--present}{MS, Infomation Technology}{The Hong Kong University of Science and Technology - HKUST}{HK, China}{}{}
+\cventry{2009--2013}{Bachelor's Degree, Software Engineering}{Beijing University of Aeronautics and Astronautics - BUAA}{Beijing, China}{}{}
+\cvline{GPA:}{\small 3.57/4.0}
+
+
+\section{Working Experience}
+\cventry{\small 2013.2--2013.4}{Intern, C/C++ Developer}{Opensource Technology Department}{Intel Corporation}{Beijing}{Mainly developed Webkit Engine. Helped build up the browser with SSG(Software Support Group) on the linux-based system named Tizen(\url{https://www.tizen.org/}), a mobile system designed by Sumsung and
+Intel. I helped to enable Native Client and Pepper API support in the released browser and build nacl-toolchain, as a result of which browser could run C/C++ code. Writed some test scripts in the browser to test the avaliablity and utility of NaCl. 
+%With NaCl it allows real-time web applications that are compute-intensive and/or interactive (e.g. games, media, large data analysis, visualizations) to leverage the resources of a client's machine and avoid costly network access while running in a secure environment with restricted access to the host.
+}
+
+\cventry{\small 2012.2--2012.6}{Intern, Web Developer}{Product Department}{SINA Corporation}{Beijing}{Served as an intern and Front-End Web Developer in SINA Weibounder SINA Corporation. Mainly in charge of the front-end web development of different SINA products such as Login  and Registration, User Center. Helped develop the HTML5 version of game named Wei Sanguo on the platform of Sina Weibo. Used Javascript and PHP to developed the on-line test system to evaluate ablities and
+skills of applicants. Acted as a trainee in 3rd Front-End Web and Linux Management and Development, SINA On-line Training.}
+
+\cventry{Spring 2011}{Intern}{Beijing Changtan Technology Limited}{\url{http://diandian.com}}{Beijing}{Acted as the campus brand promotion ambassador of \url{diandian.com} in universities and colleges on Xueyuan Road. Participated in product feedback and design.}
+
+\subsection{School Working Experience}
+\cventry{2010--2011}{Teaching Assistant}{BUAA}{Beijing}{}{Was a teaching assistant for courses titled "C\# Program Design" and "Application Development Practice".
+Held weekly review sessions and office hours.
+Organized presentations for inspecting the homework of applications.
+Wrote and graded assignments.
+Proctored and graded exams.
+}
+
+\section{Main Project Experience}
+\cventry{2013.7}{Barn of Food}{Entry for Baidu Hack Day}{\small{\url{http://t.cn/zQM6Odz}}}{Python, Django}{
+An easy way to find local, in-season food. Using Baidu LBS Cloud to pinpoint nearby farmers' markets \& farms that sell the products you love. Discover seasonal recipes. Share it all on Sina Weibo. 
+}
+\cventry{2012.11}{Pixels}{Entry for Intel Innovation Competition}{\small{\url{http://t.cn/zWlIj0q}}}{WebGL, Javascript}{
+    A web app designed for people to design their own pixel works. Including work space for both 2D and 3D. Used HTML5 and WebGL to enable features both on PC and mobile devices. Reported by Baidu at \small{\url{http://t.cn/zllL0VT}}.
+}
+\cventry{2012.8}{My Health}{Entry for China Students Service Outsourcing Innocation and Entrepreneurship Competition}{\small{\url{https://github.com/KeithYue/MyHeath-Android}}}{MongoDB, REST api}{
+An android-based application aimed at improving personal status of health control. One can practice physical examination, search medicine, get adviece from doctors online with it.
+}
+\cventry{2011.9}{Right City for You}{Entry for Weibo Innocation Competition of Application}{\small{\url{http://t.cn/zQ6XHKL}}}{PHP}{
+A social game that could test which global city is suitable for you to live in. Used Sina Weibo Open Platform and PHP. Won 17000+ users now.
+}
+\cventry{2011.5}{Panoramic Image Capture}{Entry for 21st "Fengru Cup" Student Academic And Scientific Work Competition}{}{SIFT, C/C++}{
+A design based on the scale invariant feature transformation algorithm.
+A panorama image capture tool that enables ordinary digital camera to achieve the effect of the panoramic camera.
+}
+
+\section{Technical Experience}
+\subsection{Extremely Proficient With}
+\cvline{Languages}{C, C++, Java, Python, JavaScript, HTML, CSS, PHP}
+\cvline{Technologies}{Django, MySQL, SQLite, \LaTeX{}, Bash Scripting, Git, Vim, jQuery, Bootstrap, Backbone, Windows, Ubuntu, OSX, Android Development, OpenCV, LAMP Web Development, Open Web Platform(HTML5 \& WebGL), MongoDB}
+\subsection{Have Experience With}
+% \cvline{languages}{PHP, Java, Objective C, Fortran, Perl, Scheme, OCaml, ML, Lisp, Prolog, VHDL, IDL}
+\cvline{Languages}{ActionScript, JSON, CoffeeScript, LESS, Jade}
+% \cvline{technologies}{Apache, Nginx, DB2, Joomla CMS, Dragonfly CMS, Emacs, Flash, Photoshop, Seashore, HAML, SQL Server, ENVI, Visual Studio, Eclipse, .NET}
+\cvline{Technologies}{Apache, Nginx, Flash, Photoshop, Dreamweaver, NoSQL, Visual Studio, Eclipse, .NET, Meteor}
+
+\section{Honors}
+\subsection{Scholarship}
+\cventry{2011--2012}{The 4th Prize Scholarship of Academic Performance}{BUAA}{}{}{}
+\cventry{2010--2011}{The Third Prize of Scholarship of Science and Technology Competition}{BUAA}{}{}{}
+\cventry{2009--2010}{The Third Prize of Scholarship of Collective Duties}{BUAA}{}{}{}
+
+\subsection{Honors}
+\cventry{2013.6}{Outstanding Graduate from Beihang University}{BUAA}{}{}{}
+\cventry{2012.3}{Sina App Engine Intermediate Developer}{SAE}{Sina Corporation}{}{}
+\cventry{2009--2010}{Excellent Student Cadre}{BUAA}{}{}{}
+
+\subsection{Prizes}
+\cventry{2010--2011}{The Second Prize for Innovative Technology}{College of Software}{BUAA}{}{}
+\cventry{2009--2010}{The Second Prize for The Creative Working}{College of Software}{BUAA}{}{}
+
+\subsection{Technical Competition}
+\cventry{2013.7}{The Special Prize of Baidu Cloud LBS Application}{Coding for Green Life}{Baidu Open Cloud Hackathon}{Baidu Corporation}{}
+\cventry{2012.11}{The Second Prize}{5th Intel Cup National College Students' HTML5 Software Innovation Competition}{Intel Corporation}{}{}
+\cventry{2012.8}{The Third Prize}{3rd China Students Service Outsourcing Innocation and Entrepreneurship Competition}{Ministry of Education}{}{}
+\cventry{2012.5}{The Third Prize}{22st "Fengru Cup" Student Academic And Scientific Work Competition}{BUAA}{}{}
+\cventry{2012.5}{Excellent Performance}{5th University Student Research
+Training Program}{SRTP}{BUAA}{}
+\cventry{2011.5}{The Second Prize}{21st "Fengru Cup" Student Academic And Scientific Work Competition}{BUAA}{}{}
+
+
+\section{Excurricular Activities}
+\cventry{2013.7}{Baidu Open Cloud Hackathon}{Coding for Green Life}{Beijing}{}{Our Android-based Application Shiku won the Special Award of Baidu LBS Cloud. Built up Python Restful API for client and deployed our server to Baidu Cloud Platform.}
+\cventry{2010--present}{Opensource Software Club Teams}{BUAA}{Beijing}{}{Participated in discussions new technology regularly. Helped organize lectures about opensource technology around the school.}
+\cventry{2011--2012}{Minister}{Scientific Practice Department}{Students' Union}{College of Software, BUAA}{Acted to organize activites about scientific practice amoung students, including starting programming competitions and helping students prepared for "Fengru Cup" Student Academic And Scientific Work Competition.}
+\cventry{2011.9}{Volunteer}{Baidu World Assembly}{Beijing}{}{
+Served as a volunteer to help organize the meeting for three days.
+}
+
+\end{document}
